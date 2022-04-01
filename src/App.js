@@ -1,5 +1,5 @@
 import React, { useState } from "react"; //use state hook used to create and update variables
-import DisplayEntries from "./Components/DisplayEntries/DisplayEntries";
+import DisplayPost from "./Components/DisplayEntries/DisplayPost";
 
 function App() {
   const [entries, setEntries] = useState([
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div>
-      <DisplayEntries parentEntries={entries} />
+      <DisplayPost parentEntries={entries} />
     </div>
   );
 }
