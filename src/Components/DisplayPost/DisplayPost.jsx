@@ -1,10 +1,11 @@
 const  DisplayPost = (props) => {
     return (  
-        <table className="table">
+      <div className="card">
+        <table class="table">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Post</th>
+            <th></th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -19,6 +20,7 @@ const  DisplayPost = (props) => {
           })}
         </tbody>
       </table>
+      </div>
 
     );
 }
