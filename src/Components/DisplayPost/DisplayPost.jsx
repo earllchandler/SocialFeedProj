@@ -1,4 +1,4 @@
-const  DisplayEntries = (props) => {
+const  DisplayPost = (props) => {
     return (  
         <table>
         <thead>
@@ -10,10 +10,10 @@ const  DisplayEntries = (props) => {
         <tbody>
           {props.parentEntries.map((entry, index) => {
             return (
-              <tr>
+              <tr key={index}>
                 {/* <td>{index + 1}</td> */}
-                <td>{entry.Name}</td>
-                <td>{entry.Post}</td>
+                <td>{entry.name}</td>
+                <td>{entry.post}</td>
               </tr>
             );
           })}
@@ -23,4 +23,4 @@ const  DisplayEntries = (props) => {
     );
 }
  
-export default DisplayEntries;
+export default DisplayPost;
