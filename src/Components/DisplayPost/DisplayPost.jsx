@@ -1,6 +1,6 @@
 const  DisplayPost = (props) => {
     return (  
-        <table>
+        <table className="table">
         <thead>
           <tr>
             <th>Name</th>
